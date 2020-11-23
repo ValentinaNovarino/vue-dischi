@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    width: 200px;
+    height: 60px;
+}
+
+.cds-container {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, rgb(77, 77, 77), rgb(0, 0, 0));
+}
+
+.cd-card {
+    width: 200px;
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(166, 166, 166);
+}
+
+.poster img {
+    width: 150px;
+    height: 150px;
+}
+
+h3.title, span.author, span.year {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
