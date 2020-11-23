@@ -1,7 +1,8 @@
 var app = new Vue ( {
     el: '#root',
     data: {
-        discs: []
+        discs: [],
+        genres: []
     },
     mounted() {
         var self = this;
@@ -9,6 +10,14 @@ var app = new Vue ( {
         .then(function(cd) {
             self.discs = cd.data.response;
             console.log(self.discs);
-        })
+
+            self.discs.forEach((cd, i) => {
+
+                if (!self.genres.includes(cd.genre)) {
+                    self.genres.push(cd.genre);
+                };
+            });
+        });
+
     }
 })
