@@ -24,16 +24,17 @@ img {
 
 .cds-container {
     width: 100vw;
-    height: calc(100vh - 100px);
-    padding: 100px;
+    padding: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     background-image: linear-gradient(to bottom right, rgb(77, 77, 77), rgb(0, 0, 0));
 }
 
 .cd-card {
     width: 200px;
     padding: 25px;
+    margin: 20px;
     border-radius: 5px;
     display: flex;
     align-items: center;

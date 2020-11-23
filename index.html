@@ -14,13 +14,13 @@
                 <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="">
             </header>
             <div class="cds-container">
-                <div class="cd-card">
+                <div class="cd-card" v-for='cd in discs'>
                     <div class="poster">
-                        <img src= "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+                        <img :src= "cd.poster" :alt="cd.title">
                     </div>
-                    <h3 class="title">New Jersey</h3>
-                    <span class="author">Bon Jovi</span>
-                    <span class="year">1988</span>
+                    <h3 class="title">{{ cd.title }}</h3>
+                    <span class="author">{{ cd.author }}</span>
+                    <span class="year">{{ cd.year }}</span>
                 </div>
             </div>
         </div>
