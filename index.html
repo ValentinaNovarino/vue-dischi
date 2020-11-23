@@ -13,13 +13,14 @@
             <header>
                 <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="">
                 <div class="select">
-                    <select class="genre" name="">
-                        <option v-for='genre in genres' value="">{{ genre }}</option>
+                    <select class="genre" v-model='selectedGenre' name="">
+                        <option value="All Types">All types</option>
+                        <option v-for='genre in genres' :value="genre">{{ genre }}</option>
                     </select>
                 </div>
             </header>
             <div class="cds-container">
-                <div class="cd-card" v-for='cd in discs'>
+                <div class="cd-card" v-for='cd in discs' v-if ="(selectedGenre == cd.genre || selectedGenre == 'All Types')">
                     <div class="poster">
                         <img :src= "cd.poster" :alt="cd.title">
                     </div>

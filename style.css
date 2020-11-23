@@ -24,6 +24,13 @@ img {
     height: 60px;
 }
 
+select {
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
 
 .cds-container {
     width: 100vw;
